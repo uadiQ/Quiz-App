@@ -75,9 +75,9 @@
 		1C283D891FD0AC8E00C76B95 /* Quiz App */ = {
 			isa = PBXGroup;
 			children = (
-				1C283D9E1FD0AE9200C76B95 /* Model */,
-				1C283DAC1FD0B14000C76B95 /* View */,
-				1C283D9D1FD0AE8600C76B95 /* Controllers */,
+				1C283DB31FD0CBB700C76B95 /* Model */,
+				1C283DB41FD0CBCB00C76B95 /* View */,
+				1C283DB51FD0CBE700C76B95 /* Controllers */,
 				1C283D9C1FD0AE2600C76B95 /* Supporting Files */,
 			);
 			path = "Quiz App";
@@ -94,7 +94,26 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		1C283D9D1FD0AE8600C76B95 /* Controllers */ = {
+		1C283DB31FD0CBB700C76B95 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1C283DA61FD0AFAE00C76B95 /* DataManager.swift */,
+				1C283DA81FD0AFBC00C76B95 /* Category.swift */,
+				1C283DAA1FD0AFCC00C76B95 /* Question.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1C283DB41FD0CBCB00C76B95 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1C283DAD1FD0B18100C76B95 /* CategoryTableViewCell.swift */,
+				1C283DAF1FD0B18F00C76B95 /* QuestionTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1C283DB51FD0CBE700C76B95 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				1C283D8E1FD0AC8E00C76B95 /* Main.storyboard */,
@@ -102,26 +121,7 @@
 				1C283DA11FD0AF4400C76B95 /* CategoryQuestionsTableViewController.swift */,
 				1C283DA31FD0AF8400C76B95 /* QuestionViewController.swift */,
 			);
-			name = Controllers;
-			sourceTree = "<group>";
-		};
-		1C283D9E1FD0AE9200C76B95 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				1C283DA61FD0AFAE00C76B95 /* DataManager.swift */,
-				1C283DA81FD0AFBC00C76B95 /* Category.swift */,
-				1C283DAA1FD0AFCC00C76B95 /* Question.swift */,
-			);
-			name = Model;
-			sourceTree = "<group>";
-		};
-		1C283DAC1FD0B14000C76B95 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				1C283DAD1FD0B18100C76B95 /* CategoryTableViewCell.swift */,
-				1C283DAF1FD0B18F00C76B95 /* QuestionTableViewCell.swift */,
-			);
-			name = View;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		509CE3ACBF6C82EE7786B6BA /* Frameworks */ = {
