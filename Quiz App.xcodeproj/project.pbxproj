@@ -154,6 +154,7 @@
 				1C283D851FD0AC8E00C76B95 /* Resources */,
 				80BA329098AD8953A3A3D7CD /* [CP] Embed Pods Frameworks */,
 				089505575A95CFE89F48E7DB /* [CP] Copy Pods Resources */,
+				1C283DE31FD0D44200C76B95 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -226,6 +227,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Quiz App/Pods-Quiz App-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		1C283DE31FD0D44200C76B95 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
 		};
 		1F452D07BB6648B50898C808 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

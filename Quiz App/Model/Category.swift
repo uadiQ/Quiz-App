@@ -14,7 +14,6 @@ struct Category {
     let id: Int
 }
 
-
 extension Category {
     init?(json: JSON) {
       guard let id = json["id"].int, let name = json["name"].string else { return nil }

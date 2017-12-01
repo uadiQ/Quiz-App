@@ -14,6 +14,7 @@ class CategoriesTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         DataManager.instance.loadCategories()
+        tableView.reloadData()
     }
 
     private func getCategory(for indexPath: IndexPath) -> Category {
@@ -23,7 +24,7 @@ class CategoriesTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return DataManager.instance.CategoriesArray.count
+        return DataManager.instance.сategoriesArray.count
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -38,6 +39,5 @@ class CategoriesTableViewController: UITableViewController {
         tableView.reloadData()
         return cell
     }
-
 
 }
